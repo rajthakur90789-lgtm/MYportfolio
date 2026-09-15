@@ -7,7 +7,7 @@ import {
   FaLightbulb
 } from 'react-icons/fa'
 
-import rajprofile from '../assets/assets/rajprofile.jpeg'
+import rajprofile from '../assets/assets/Linkprofile.jpeg'
 
 const About = () => {
 
@@ -66,15 +66,15 @@ const About = () => {
           {/* Image */}
           <div className="md:w-1/2 rounded-2xl overflow-hidden">
 
-        <motion.img
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
-          className='w-full h-full object-cover'
-          src={rajprofile}
-        alt='profile'
-        />
+            <motion.img
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.2 }}
+              className="w-full h-full object-cover"
+              src={rajprofile}
+              alt="profile"
+            />
 
           </div>
 
