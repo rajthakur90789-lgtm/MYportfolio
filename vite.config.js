@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
 
   preview: {
-    allowedHosts: ['myportfolio-yer6.onrender.com'],
+    allowedHosts: ['myportfolio-1-br4k.onrender.com'],
   },
 })
