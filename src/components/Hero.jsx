@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import profileImage from '../assets/assets/rajprofile.jpeg'
+import profileImage from '../assets/assets/Linkprofile.jpeg'
 
 const Hero = () => {
   const text = "FULL STACK DEVELOPER"
@@ -32,11 +32,14 @@ const Hero = () => {
     >
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
 
-        {/* Left side content */}
+        {/* Left Side */}
         <div className="md:w-1/2 mb-10 md:mb-0">
 
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hi, I'm <span className="text-blue-500">Raj Solanki</span>
+            Hi, I'm{" "}
+            <span className="text-blue-500">
+              Raj Solanki
+            </span>
           </h1>
 
           <h2 className="text-2xl md:text-4xl font-semibold mb-6">
@@ -45,7 +48,7 @@ const Hero = () => {
           </h2>
 
           <p className="text-lg text-gray-400 mb-8">
-            I create stunning web experiences with modern technologies and innovative
+            I create stunning web experiences with modern technologies and innovative solutions.
           </p>
 
           <div className="flex space-x-4">
@@ -61,31 +64,33 @@ const Hero = () => {
               href="#contact"
               className="px-6 py-3 bg-gray-800 hover:bg-gray-600 text-white font-bold rounded-full transition duration-300"
             >
-              Contact me
+              Contact Me
             </a>
 
           </div>
 
         </div>
 
-        {/* Right side image */}
+        {/* Right Side */}
         <div className="md:w-1/2 flex justify-center">
 
           <div className="relative w-64 h-64 md:w-80 md:h-80">
 
+            {/* Gradient Circle */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 opacity-70"></div>
 
+            {/* Profile Image */}
             <motion.img
               animate={{ y: [0, -20, 0] }}
               transition={{
                 duration: 4,
                 repeat: Infinity,
                 repeatType: "loop",
-                ease: "easeInOut",
+                ease: "easeInOut"
               }}
               className="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover z-10"
               src={profileImage}
-              alt="Raj Solanki profile"
+              alt="Raj Solanki"
             />
 
           </div>
